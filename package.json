@@ -1,0 +1,21 @@
+{
+  "name": "pr-healthcare",
+  "version": "1.0.0",
+  "description": "PR Healthcare - Modern & Trustworthy Hospital Website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'PR Healthcare is ready for static deployment.'"
+  },
+  "keywords": [
+    "hospital",
+    "healthcare",
+    "medical",
+    "pr-healthcare",
+    "responsive",
+    "vercel"
+  ],
+  "author": "PR Healthcare",
+  "license": "ISC"
+}

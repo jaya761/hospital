@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PR Healthcare | Compassionate Care. Advanced Healthcare.</title>
+  <meta name="description" content="PR Healthcare is a premier medical institution providing trusted clinical care with experienced doctors, modern facilities, 24/7 emergency services, and compassionate patient care.">
+  <meta name="keywords" content="PR Healthcare, hospital, medical care, doctors, cardiology, pediatrics, emergency care, appointments">
+  <meta name="theme-color" content="#0284c7">
+  
+  <!-- Favicon Icon (Medical Cross) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230284c7%22/><path d=%22M50 25v50M25 50h50%22 stroke=%22%23ffffff%22 stroke-width=%2216%22 stroke-linecap=%22round%22/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== TOPBAR ==================== -->
+  <aside class="topbar" aria-label="Quick Contact Information">
+    <div class="container topbar-content">
+      <div class="topbar-items">
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Emergency Services Available 24/7</span>
+        </div>
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Hospital Address &ndash; Coming Soon</span>
+        </div>
+      </div>
+      <div class="topbar-items">
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">WhatsApp: +91 83678398090</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand" aria-label="PR Healthcare Homepage">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12h14"></path>
+          </svg>
+        </div>
+        <div class="brand-text">PR <span>Healthcare</span></div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#departments" class="nav-link">Departments</a>
+        <a href="#doctors" class="nav-link">Doctors</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#facilities" class="nav-link">Facilities</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#appointment" class="btn btn-primary btn-sm btn-appointment-nav">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span>Book Appointment</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+        </div>
+        <div class="brand-text">PR <span>Healthcare</span></div>
+      </div>
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#departments" class="mobile-link">Departments</a>
+      <a href="#doctors" class="mobile-link">Doctors</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#facilities" class="mobile-link">Facilities</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <a href="#appointment" class="btn btn-primary mobile-link" style="width: 100%;">Book Appointment</a>
+      <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">WhatsApp Us</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content fade-in-up">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span>Trusted Healthcare Partner</span>
+            </div>
+            <h1 class="hero-title">
+              Compassionate Care. <span>Advanced Healthcare.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Your health is our priority. PR Healthcare provides trusted medical care with experienced professionals, modern facilities and patient-focused services.
+            </p>
+            <div class="hero-cta">
+              <a href="#appointment" class="btn btn-primary btn-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Book an Appointment</span>
+              </a>
+              <a href="#contact" class="btn btn-outline btn-lg">
+                <span>Contact Us</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-media fade-in-up">
+            <div class="hero-image-wrapper">
+              <img src="assets/images/hero-doctor.jpg" alt="Experienced medical team at PR Healthcare" width="600" height="480" loading="eager">
+            </div>
+
+            <!-- Floating Trust Badges -->
+            <div class="hero-floating-card top-right">
+              <div class="floating-icon blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div class="floating-text">
+                <h4>Verified Specialists</h4>
+                <p>Top clinical standards</p>
+              </div>
+            </div>
+
+            <div class="hero-floating-card bottom-left">
+              <div class="floating-icon green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div class="floating-text">
+                <h4>24/7 Emergency Care</h4>
+                <p>Rapid response team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Indicators below Hero -->
+        <div class="trust-indicators fade-in-up">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="trust-text">
+              <h4>Experienced Doctors</h4>
+              <p>Specialist medical council</p>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+            </div>
+            <div class="trust-text">
+              <h4>Advanced Facilities</h4>
+              <p>Modern medical equipment</p>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <div class="trust-text">
+              <h4>Patient-Centered Care</h4>
+              <p>Compassionate approach</p>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="trust-text">
+              <h4>24/7 Support</h4>
+              <p>Continuous clinical readiness</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT US SECTION ==================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content fade-in-up">
+            <div class="section-badge">About Us</div>
+            <h2 class="section-title">About PR Healthcare</h2>
+            <p class="lead">
+              PR Healthcare is committed to providing quality healthcare services in a safe, comfortable and patient-friendly environment. Our team of healthcare professionals focuses on accurate diagnosis, effective treatment and compassionate patient care.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature-card">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+                </div>
+                <h3>Experienced Medical Team</h3>
+                <p>Highly qualified consultants, dedicated surgeons, and compassionate clinical staff.</p>
+              </div>
+
+              <div class="about-feature-card">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <h3>Modern Healthcare Facilities</h3>
+                <p>State-of-the-art diagnostic instruments, fully equipped modular operation suites, and ICUs.</p>
+              </div>
+
+              <div class="about-feature-card">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+                </div>
+                <h3>Personalized Patient Care</h3>
+                <p>Customized care pathways designed to prioritize individual health, recovery, and well-being.</p>
+              </div>
+
+              <div class="about-feature-card">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h3>Safe & Comfortable Environment</h3>
+                <p>Strict clinical sanitization, patient safety protocols, and tranquil recovery rooms.</p>
+              </div>
+            </div>
+
+            <a href="#appointment" class="btn btn-primary">Book a Consultation</a>
+          </div>
+
+          <div class="about-media fade-in-up">
+            <div class="about-image-wrapper">
+              <img src="assets/images/about-hospital.jpg" alt="PR Healthcare hospital campus exterior" width="600" height="460" loading="lazy">
+            </div>
+            <div class="about-badge">
+              <h3>24/7</h3>
+              <p>Dedicated Healthcare &<br>Emergency Excellence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DEPARTMENTS SECTION ==================== -->
+    <section class="section" id="departments">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <div class="section-badge">Specialties</div>
+          <h2 class="section-title">Our Medical Departments</h2>
+          <p class="section-subtitle">
+            PR Healthcare brings together comprehensive clinical departments led by experienced physicians equipped with modern diagnostic and therapeutic capabilities.
+          </p>
+        </div>
+
+        <div class="dept-grid">
+          <!-- 1. General Medicine -->
+          <div class="dept-card fade-in-up" data-dept="General Medicine">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h3>General Medicine</h3>
+            <p>Comprehensive adult healthcare, routine clinical checkups, preventative health plans, and management of chronic conditions.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about General Medicine">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 2. Cardiology -->
+          <div class="dept-card fade-in-up" data-dept="Cardiology">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.78L12 20.67l7.65-7.66.77-.78a5.4 5.4 0 0 0 0-7.65z"></path></svg>
+            </div>
+            <h3>Cardiology</h3>
+            <p>Advanced cardiac diagnostics, ECG, echocardiography, hypertension management, and preventive heart health care.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about Cardiology">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 3. Orthopedics -->
+          <div class="dept-card fade-in-up" data-dept="Orthopedics">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3>Orthopedics</h3>
+            <p>Expert care for joint pain, fracture management, arthritis therapy, spine health, and specialized sports injury recovery.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about Orthopedics">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 4. Pediatrics -->
+          <div class="dept-card fade-in-up" data-dept="Pediatrics">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 1 0-16 0"></path><line x1="12" y1="11" x2="12" y2="15"></line></svg>
+            </div>
+            <h3>Pediatrics</h3>
+            <p>Gentle and dedicated healthcare for newborns, children, and adolescents, including immunization and growth milestones.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about Pediatrics">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 5. Gynecology -->
+          <div class="dept-card fade-in-up" data-dept="Gynecology">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><line x1="12" y1="15" x2="12" y2="21"></line><line x1="9" y1="18" x2="15" y2="18"></line></svg>
+            </div>
+            <h3>Gynecology</h3>
+            <p>Comprehensive women's healthcare, prenatal screenings, maternal care, hormonal evaluations, and wellness consultations.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about Gynecology">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 6. Dermatology -->
+          <div class="dept-card fade-in-up" data-dept="Dermatology">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <h3>Dermatology</h3>
+            <p>Clinical assessment and treatment for acute skin conditions, allergies, hair disorders, and preventative skincare.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about Dermatology">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 7. ENT -->
+          <div class="dept-card fade-in-up" data-dept="ENT">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg>
+            </div>
+            <h3>ENT</h3>
+            <p>Diagnosis and care for disorders of the ear, nose, throat, sinuses, balance problems, and hearing assessments.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about ENT">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- 8. Emergency Care -->
+          <div class="dept-card fade-in-up" data-dept="Emergency Care">
+            <div class="dept-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <h3>Emergency Care</h3>
+            <p>Immediate 24/7 medical response, trauma stabilization, acute care triage, and advanced life-support readiness.</p>
+            <button class="dept-btn" type="button" aria-label="Learn more about Emergency Care">
+              <span>Learn More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DOCTORS SECTION ==================== -->
+    <section class="section section-alt" id="doctors">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <div class="section-badge">Medical Specialists</div>
+          <h2 class="section-title">Our Medical Specialists</h2>
+          <p class="section-subtitle">
+            Meet our dedicated team of experienced clinicians committed to delivering exceptional patient outcomes with empathy and clinical precision.
+          </p>
+        </div>
+
+        <!-- Sample Content Disclaimer -->
+        <div class="disclaimer-box fade-in-up">
+          <strong>Note:</strong> The doctor profiles shown below are sample/illustrative representations to demonstrate the hospital layout and appointment system. They do not claim actual employment at PR Healthcare.
+        </div>
+
+        <div class="doctors-grid">
+          <!-- Doctor 1 -->
+          <div class="doctor-card fade-in-up" data-doc-id="1">
+            <div class="doctor-image-holder">
+              <img src="assets/images/doctor-1.jpg" alt="Dr. Arun Kumar, Consultant Physician" width="400" height="280" loading="lazy">
+              <span class="doctor-badge-exp">10+ Years Exp</span>
+              <span class="doctor-badge-sample">Sample Profile</span>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Arun Kumar</h3>
+              <div class="doctor-specialty">Consultant Physician</div>
+              <div class="doctor-meta">
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                  <span>General Medicine</span>
+                </div>
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Mon - Sat</span>
+                </div>
+              </div>
+              <div class="doctor-actions">
+                <button class="btn btn-outline btn-sm view-profile-btn" data-doc="1" type="button">View Profile</button>
+                <button class="btn btn-primary btn-sm book-doc-btn" data-name="Dr. Arun Kumar" data-dept="General Medicine" type="button">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 2 -->
+          <div class="doctor-card fade-in-up" data-doc-id="2">
+            <div class="doctor-image-holder">
+              <img src="assets/images/doctor-2.jpg" alt="Dr. Priya Sharma, Cardiologist" width="400" height="280" loading="lazy">
+              <span class="doctor-badge-exp">8+ Years Exp</span>
+              <span class="doctor-badge-sample">Sample Profile</span>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Priya Sharma</h3>
+              <div class="doctor-specialty">Cardiologist</div>
+              <div class="doctor-meta">
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.78L12 20.67l7.65-7.66.77-.78a5.4 5.4 0 0 0 0-7.65z"></path></svg>
+                  <span>Cardiology</span>
+                </div>
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Mon - Fri</span>
+                </div>
+              </div>
+              <div class="doctor-actions">
+                <button class="btn btn-outline btn-sm view-profile-btn" data-doc="2" type="button">View Profile</button>
+                <button class="btn btn-primary btn-sm book-doc-btn" data-name="Dr. Priya Sharma" data-dept="Cardiology" type="button">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 3 -->
+          <div class="doctor-card fade-in-up" data-doc-id="3">
+            <div class="doctor-image-holder">
+              <img src="assets/images/doctor-3.jpg" alt="Dr. Rajesh Nair, Orthopedic Surgeon" width="400" height="280" loading="lazy">
+              <span class="doctor-badge-exp">12+ Years Exp</span>
+              <span class="doctor-badge-sample">Sample Profile</span>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Rajesh Nair</h3>
+              <div class="doctor-specialty">Orthopedic Surgeon</div>
+              <div class="doctor-meta">
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span>Orthopedics</span>
+                </div>
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Tue - Sat</span>
+                </div>
+              </div>
+              <div class="doctor-actions">
+                <button class="btn btn-outline btn-sm view-profile-btn" data-doc="3" type="button">View Profile</button>
+                <button class="btn btn-primary btn-sm book-doc-btn" data-name="Dr. Rajesh Nair" data-dept="Orthopedics" type="button">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 4 -->
+          <div class="doctor-card fade-in-up" data-doc-id="4">
+            <div class="doctor-image-holder">
+              <img src="assets/images/doctor-4.jpg" alt="Dr. Ananya Sen, Pediatrician" width="400" height="280" loading="lazy">
+              <span class="doctor-badge-exp">9+ Years Exp</span>
+              <span class="doctor-badge-sample">Sample Profile</span>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Ananya Sen</h3>
+              <div class="doctor-specialty">Pediatrician</div>
+              <div class="doctor-meta">
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 1 0-16 0"></path></svg>
+                  <span>Pediatrics</span>
+                </div>
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Mon - Fri</span>
+                </div>
+              </div>
+              <div class="doctor-actions">
+                <button class="btn btn-outline btn-sm view-profile-btn" data-doc="4" type="button">View Profile</button>
+                <button class="btn btn-primary btn-sm book-doc-btn" data-name="Dr. Ananya Sen" data-dept="Pediatrics" type="button">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 5 -->
+          <div class="doctor-card fade-in-up" data-doc-id="5">
+            <div class="doctor-image-holder">
+              <img src="assets/images/doctor-5.jpg" alt="Dr. Meera Reddy, Gynecologist & Obstetrician" width="400" height="280" loading="lazy">
+              <span class="doctor-badge-exp">11+ Years Exp</span>
+              <span class="doctor-badge-sample">Sample Profile</span>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Meera Reddy</h3>
+              <div class="doctor-specialty">Gynecologist & Obstetrician</div>
+              <div class="doctor-meta">
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"></circle><line x1="12" y1="15" x2="12" y2="21"></line></svg>
+                  <span>Gynecology</span>
+                </div>
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Mon - Sat</span>
+                </div>
+              </div>
+              <div class="doctor-actions">
+                <button class="btn btn-outline btn-sm view-profile-btn" data-doc="5" type="button">View Profile</button>
+                <button class="btn btn-primary btn-sm book-doc-btn" data-name="Dr. Meera Reddy" data-dept="Gynecology" type="button">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Doctor 6 -->
+          <div class="doctor-card fade-in-up" data-doc-id="6">
+            <div class="doctor-image-holder">
+              <img src="assets/images/doctor-6.jpg" alt="Dr. Vikram Malhotra, Dermatologist" width="400" height="280" loading="lazy">
+              <span class="doctor-badge-exp">7+ Years Exp</span>
+              <span class="doctor-badge-sample">Sample Profile</span>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Vikram Malhotra</h3>
+              <div class="doctor-specialty">Dermatologist</div>
+              <div class="doctor-meta">
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                  <span>Dermatology</span>
+                </div>
+                <div class="doctor-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Wed - Sun</span>
+                </div>
+              </div>
+              <div class="doctor-actions">
+                <button class="btn btn-outline btn-sm view-profile-btn" data-doc="6" type="button">View Profile</button>
+                <button class="btn btn-primary btn-sm book-doc-btn" data-name="Dr. Vikram Malhotra" data-dept="Dermatology" type="button">Book Appointment</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <div class="section-badge">Patient Care</div>
+          <h2 class="section-title">Healthcare Services</h2>
+          <p class="section-subtitle">
+            From routine checkups to rapid trauma care, PR Healthcare delivers patient-first clinical services designed for safety, comfort, and clinical accuracy.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 1. Emergency Care -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h3>Emergency Care</h3>
+            <p>Rapid emergency triage, critical injury stabilization, and trauma care available 24 hours a day, 365 days a year.</p>
+          </div>
+
+          <!-- 2. OP Consultation -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>OP Consultation</h3>
+            <p>Structured outpatient clinics across major medical specialties with minimal wait times and comfortable consulting suites.</p>
+          </div>
+
+          <!-- 3. Health Checkups -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3>Health Checkups</h3>
+            <p>Comprehensive executive and family preventative health packages tailored by age, lifestyle, and medical history.</p>
+          </div>
+
+          <!-- 4. Diagnostic Services -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h3>Diagnostic Services</h3>
+            <p>High-resolution imaging, ultrasound, digital X-rays, and accurate radiological reporting for clear diagnoses.</p>
+          </div>
+
+          <!-- 5. Pharmacy -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            </div>
+            <h3>Pharmacy</h3>
+            <p>Fully stocked in-house pharmacy dispensing genuine prescription pharmaceuticals and essential medical supplies.</p>
+          </div>
+
+          <!-- 6. Laboratory Services -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.31a2 2 0 0 1-.37 1.17l-4.26 6.39A2 2 0 0 0 7.03 20h9.94a2 2 0 0 0 1.66-3.13l-4.26-6.39A2 2 0 0 1 14 9.31V2"></path><line x1="8" y1="2" x2="16" y2="2"></line></svg>
+            </div>
+            <h3>Laboratory Services</h3>
+            <p>Automated clinical pathology, hematology, and biochemistry testing delivering fast, calibrated diagnostic reports.</p>
+          </div>
+
+          <!-- 7. Ambulance Services -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <h3>Ambulance Services</h3>
+            <p>Advanced Life Support (ALS) and Basic Life Support (BLS) mobile ambulances equipped for rapid patient transit.</p>
+          </div>
+
+          <!-- 8. Online Consultation -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3>Online Consultation</h3>
+            <p>Secure digital telemedicine sessions allowing follow-ups and specialist advice from the comfort of your home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FACILITIES SECTION ==================== -->
+    <section class="section section-alt" id="facilities">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <div class="section-badge">Infrastructure</div>
+          <h2 class="section-title">World-Class Facilities</h2>
+          <p class="section-subtitle">
+            PR Healthcare is thoughtfully designed to blend high-standard clinical infrastructure with patient comfort and safety.
+          </p>
+        </div>
+
+        <div class="facilities-grid">
+          <!-- 1. Modern Operation Theatres -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-ot.jpg" alt="Modern Operation Theatre at PR Healthcare" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Modern Operation Theatres</h3>
+              <p>Sterile laminar airflow surgical suites equipped with modern monitoring and laparoscopic systems.</p>
+            </div>
+          </div>
+
+          <!-- 2. ICU -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-icu.jpg" alt="Intensive Care Unit (ICU)" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Intensive Care Unit (ICU)</h3>
+              <p>Specialized intensive care beds with dedicated patient monitoring and round-the-clock intensivists.</p>
+            </div>
+          </div>
+
+          <!-- 3. Emergency Room -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-er.jpg" alt="Emergency Room trauma bay" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Emergency Room</h3>
+              <p>Multi-bed emergency trauma bay designed for rapid evaluation, triage, and urgent stabilization.</p>
+            </div>
+          </div>
+
+          <!-- 4. Diagnostic Laboratory -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-lab.jpg" alt="Diagnostic Laboratory" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Diagnostic Laboratory</h3>
+              <p>Fully automated pathology analyzer systems ensuring accurate and swift test turnaround times.</p>
+            </div>
+          </div>
+
+          <!-- 5. Pharmacy -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-pharmacy.jpg" alt="Hospital Pharmacy" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Pharmacy</h3>
+              <p>On-site pharmacy stocked with cold-chain storage to ensure integrity of all essential medicines.</p>
+            </div>
+          </div>
+
+          <!-- 6. Patient Rooms -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-rooms.jpg" alt="Patient Rooms" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Patient Rooms</h3>
+              <p>Well-ventilated, hygienic private and semi-private recovery rooms curated for restful patient healing.</p>
+            </div>
+          </div>
+
+          <!-- 7. Waiting Area -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-waiting.jpg" alt="Hospital Waiting Area" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Waiting Area</h3>
+              <p>Spacious and serene waiting lounges designed for visitors and family comfort with assistance desks.</p>
+            </div>
+          </div>
+
+          <!-- 8. Ambulance Services -->
+          <div class="facility-card fade-in-up">
+            <div class="facility-img-wrap">
+              <img src="assets/images/facility-ambulance.jpg" alt="Ambulance Services" width="400" height="210" loading="lazy">
+            </div>
+            <div class="facility-info">
+              <h3>Ambulance Services</h3>
+              <p>Dedicated fleet of modern ambulances with oxygen support and paramedical care for urgent transport.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE SECTION ==================== -->
+    <section class="section" id="why-choose">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-left fade-in-up">
+            <div class="section-badge">Our Commitment</div>
+            <h2>Why Choose PR Healthcare?</h2>
+            <p class="lead">
+              We understand that choosing a hospital is one of the most critical decisions for you and your family. Here is what makes PR Healthcare a trusted partner in health:
+            </p>
+
+            <div class="why-list">
+              <div class="why-item">
+                <div class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="why-item-content">
+                  <h3>Experienced Healthcare Professionals</h3>
+                  <p>Certified physicians and specialists dedicated to evidence-based clinical practices.</p>
+                </div>
+              </div>
+
+              <div class="why-item">
+                <div class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="why-item-content">
+                  <h3>Patient-Focused Treatment</h3>
+                  <p>Personalized attention where patients are actively involved in their care pathways.</p>
+                </div>
+              </div>
+
+              <div class="why-item">
+                <div class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="why-item-content">
+                  <h3>Modern Medical Facilities</h3>
+                  <p>Modern diagnostic equipment and sterile, state-of-the-art procedure rooms.</p>
+                </div>
+              </div>
+
+              <div class="why-item">
+                <div class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="why-item-content">
+                  <h3>Hygienic Environment</h3>
+                  <p>Stringent disinfection and infection control protocols ensuring utmost safety.</p>
+                </div>
+              </div>
+
+              <div class="why-item">
+                <div class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="why-item-content">
+                  <h3>Affordable Healthcare</h3>
+                  <p>Transparent pricing, flexible consultation packages, and ethical billing.</p>
+                </div>
+              </div>
+
+              <div class="why-item">
+                <div class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="why-item-content">
+                  <h3>Easy Appointment Booking</h3>
+                  <p>Convenient online booking, instant confirmation, and seamless WhatsApp support.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-right fade-in-up">
+            <div class="why-stats-grid">
+              <div class="stat-box">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Emergency Care & Ambulance</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Core Clinical Departments</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Patient Safety Standards</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">Modern</div>
+                <div class="stat-label">Diagnostic Technology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== APPOINTMENT SECTION ==================== -->
+    <section class="section section-alt" id="appointment">
+      <div class="container">
+        <div class="appointment-card fade-in-up">
+          <div class="appointment-info">
+            <div>
+              <div class="section-badge" style="background: rgba(255, 255, 255, 0.2); color: #ffffff;">Quick Scheduling</div>
+              <h2>Book an Appointment</h2>
+              <p>Schedule your consultation with our experienced medical specialists. Fill out the details and our patient care team will get back to you promptly.</p>
+              
+              <div class="info-points">
+                <div class="info-point">
+                  <div class="info-point-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <div class="info-point-text">
+                    <h4>Direct Specialist Consultations</h4>
+                    <p>Consult with certified specialists in your preferred department.</p>
+                  </div>
+                </div>
+
+                <div class="info-point">
+                  <div class="info-point-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div class="info-point-text">
+                    <h4>Minimal Waiting Time</h4>
+                    <p>Streamlined slots to reduce hospital wait times.</p>
+                  </div>
+                </div>
+
+                <div class="info-point">
+                  <div class="info-point-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                  </div>
+                  <div class="info-point-text">
+                    <h4>Instant WhatsApp Assistance</h4>
+                    <p>Reach us at +91 83678398090 for fast scheduling help.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.15);">
+              <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+                <span>Chat with Desk on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="appointment-form-wrap">
+            <form id="appointmentForm" novalidate>
+              <div class="form-grid">
+                <!-- Patient Name -->
+                <div class="form-group">
+                  <label for="patientName" class="form-label">Patient Name <span class="req">*</span></label>
+                  <input type="text" id="patientName" name="patientName" class="form-control" placeholder="e.g. Ramesh Chandra" required>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                  <label for="patientPhone" class="form-label">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="patientPhone" name="patientPhone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="patientEmail" class="form-label">Email Address <span class="req">*</span></label>
+                  <input type="email" id="patientEmail" name="patientEmail" class="form-control" placeholder="e.g. ramesh@example.com" required>
+                </div>
+
+                <!-- Department -->
+                <div class="form-group">
+                  <label for="patientDept" class="form-label">Department <span class="req">*</span></label>
+                  <select id="patientDept" name="patientDept" class="form-control" required>
+                    <option value="" disabled selected>Select Medical Department</option>
+                    <option value="General Medicine">General Medicine</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Gynecology">Gynecology</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="ENT">ENT</option>
+                    <option value="Emergency Care">Emergency Care</option>
+                  </select>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="form-group">
+                  <label for="patientDate" class="form-label">Preferred Date <span class="req">*</span></label>
+                  <input type="date" id="patientDate" name="patientDate" class="form-control" required>
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="form-group">
+                  <label for="patientTime" class="form-label">Preferred Time <span class="req">*</span></label>
+                  <select id="patientTime" name="patientTime" class="form-control" required>
+                    <option value="" disabled selected>Select Time Slot</option>
+                    <option value="Morning (09:00 AM - 12:00 PM)">Morning (09:00 AM - 12:00 PM)</option>
+                    <option value="Afternoon (12:00 PM - 04:00 PM)">Afternoon (12:00 PM - 04:00 PM)</option>
+                    <option value="Evening (04:00 PM - 08:00 PM)">Evening (04:00 PM - 08:00 PM)</option>
+                  </select>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group full">
+                  <label for="patientMessage" class="form-label">Message / Symptoms (Optional)</label>
+                  <textarea id="patientMessage" name="patientMessage" class="form-control" placeholder="Please describe any symptoms, requirements or prior consult details..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Request Appointment</span>
+              </button>
+
+              <p class="form-note">
+                <strong>Disclaimer:</strong> This is a front-end appointment request demonstration. Your request details will be validated and a confirmation modal will display. Live backend integration is pending deployment.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EMERGENCY SECTION ==================== -->
+    <section class="section" id="emergency">
+      <div class="container">
+        <div class="emergency-banner fade-in-up">
+          <div class="emergency-content">
+            <div class="emergency-badge-pulse">
+              <span class="pulse-indicator"></span>
+              <span>24/7 Rapid Emergency Response</span>
+            </div>
+            <h2>Need Immediate Medical Assistance?</h2>
+            <p>Our team is here to help. Contact PR Healthcare for immediate assistance.</p>
+          </div>
+          <div class="emergency-actions">
+            <button type="button" class="btn btn-white btn-lg" id="emergencyCallBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Call Now</span>
+            </button>
+            <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <div class="section-badge">Get In Touch</div>
+          <h2 class="section-title">Contact PR Healthcare</h2>
+          <p class="section-subtitle">
+            Have questions about clinical departments, consultations, or hospital services? Connect directly with our administration and patient care desk.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Cards -->
+          <div class="contact-info-cards fade-in-up">
+            <div class="contact-card">
+              <div class="contact-card-icon whatsapp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </div>
+              <div class="contact-card-body">
+                <h3>WhatsApp Consultation</h3>
+                <p>Direct patient support and rapid inquiries via official hospital WhatsApp.</p>
+                <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                  <span>+91 83678398090</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-card-body">
+                <h3>Hospital Address</h3>
+                <p style="font-weight: 600; color: var(--primary-deep); margin-bottom: 4px;">Hospital Address &ndash; Coming Soon</p>
+                <p style="font-size: 0.85rem; color: var(--text-light);">The physical hospital location details will be announced soon. Please contact via WhatsApp for current facilities and updates.</p>
+              </div>
+            </div>
+
+            <!-- Styled Map Card -->
+            <div class="map-placeholder-card">
+              <div class="map-visual">
+                <div class="map-pin">
+                  <div class="map-pin-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"></path></svg>
+                  </div>
+                  <div class="map-pin-badge">PR Healthcare</div>
+                </div>
+              </div>
+              <div class="map-footer">
+                <span>Location Map &bull; Pin Verified</span>
+                <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="contact-form-card fade-in-up">
+            <h2>Send Us a Message</h2>
+            <p>Our team is happy to assist you with appointments, department questions, or feedback.</p>
+            
+            <form id="contactForm" novalidate>
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label for="contactName" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="contactName" name="contactName" class="form-control" placeholder="Your full name" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label for="contactEmail" class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="contactEmail" name="contactEmail" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label for="contactPhone" class="form-label">Phone Number (Optional)</label>
+                <input type="tel" id="contactPhone" name="contactPhone" class="form-control" placeholder="+91 98765 43210">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label for="contactSubject" class="form-label">Subject <span class="req">*</span></label>
+                <input type="text" id="contactSubject" name="contactSubject" class="form-control" placeholder="Inquiry regarding..." required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 24px;">
+                <label for="contactMessage" class="form-label">Message <span class="req">*</span></label>
+                <textarea id="contactMessage" name="contactMessage" class="form-control" placeholder="Write your message or inquiry here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand">
+          <div class="brand" style="color: #ffffff; margin-bottom: 12px;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+            </div>
+            <div class="brand-text">PR <span style="color: #38bdf8;">Healthcare</span></div>
+          </div>
+          <p class="tagline">“Compassionate care for a healthier tomorrow.”</p>
+          <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="footer-whatsapp-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <span>WhatsApp: +91 83678398090</span>
+          </a>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About PR Healthcare</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#doctors">Our Doctors</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Departments -->
+        <div class="footer-col">
+          <h4>Departments</h4>
+          <ul class="footer-links">
+            <li><a href="#departments">General Medicine</a></li>
+            <li><a href="#departments">Cardiology</a></li>
+            <li><a href="#departments">Orthopedics</a></li>
+            <li><a href="#departments">Pediatrics</a></li>
+            <li><a href="#departments">Gynecology</a></li>
+            <li><a href="#departments">Dermatology</a></li>
+            <li><a href="#departments">ENT</a></li>
+            <li><a href="#departments">Emergency Care</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Hours -->
+        <div class="footer-col">
+          <h4>Hospital Details</h4>
+          <ul class="footer-links" style="gap: 14px;">
+            <li style="color: #bae6fd; font-size: 0.9rem;">
+              <strong style="color: #ffffff; display: block;">Address:</strong>
+              Hospital Address &ndash; Coming Soon
+            </li>
+            <li style="color: #bae6fd; font-size: 0.9rem;">
+              <strong style="color: #ffffff; display: block;">Emergency Support:</strong>
+              Available 24 Hours / 7 Days
+            </li>
+            <li style="color: #bae6fd; font-size: 0.9rem;">
+              <strong style="color: #ffffff; display: block;">OPD Hours:</strong>
+              Mon - Sat: 08:00 AM - 08:00 PM
+            </li>
+            <li style="margin-top: 6px;">
+              <a href="#appointment" class="btn btn-primary btn-sm" style="width: 100%;">Book Appointment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PR Healthcare. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; color: #94a3b8;">Designed for patient trust, clinical excellence, and accessibility.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+  <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat with PR Healthcare on WhatsApp">
+    <div class="floating-whatsapp-tooltip">Chat with us: +91 83678398090</div>
+    <div class="floating-whatsapp-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+    </div>
+  </a>
+
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- ==================== MODALS ==================== -->
+  <!-- 1. Appointment Confirmation Modal -->
+  <div class="modal-backdrop" id="appointmentSuccessModal" role="dialog" aria-modal="true" aria-labelledby="appModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="appModalTitle">Appointment Request Submitted</h3>
+        <button class="modal-close" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="text-align: center; margin-bottom: 20px;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: #dcfce7; color: #16a34a; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--primary-deep); margin-bottom: 6px;">Thank You!</h4>
+          <p style="font-size: 0.95rem; color: var(--text-muted);">Your appointment request has been received. Our scheduling coordinator will connect with you shortly.</p>
+        </div>
+
+        <div style="background: var(--bg-alt); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px; font-size: 0.9rem;" id="appointmentSummaryContent">
+          <!-- Populated by JS -->
+        </div>
+
+        <div style="background: var(--primary-subtle); border: 1px solid #bae6fd; border-radius: var(--radius-sm); padding: 12px 16px; font-size: 0.825rem; color: var(--primary-deep); margin-bottom: 24px;">
+          <strong>Note:</strong> This is a sample front-end confirmation message. For urgent clinical assistance or rapid confirmation, please message us directly on WhatsApp at <strong>+91 83678398090</strong>.
+        </div>
+
+        <div style="display: flex; gap: 12px;">
+          <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="flex: 1;">
+            <span>Chat on WhatsApp</span>
+          </a>
+          <button type="button" class="btn btn-outline" data-close-modal style="flex: 1;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Doctor Profile Modal -->
+  <div class="modal-backdrop" id="doctorProfileModal" role="dialog" aria-modal="true" aria-labelledby="docModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="docModalTitle">Doctor Profile</h3>
+        <button class="modal-close" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="doctorModalBody">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Department Detail Modal -->
+  <div class="modal-backdrop" id="deptDetailModal" role="dialog" aria-modal="true" aria-labelledby="deptModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="deptModalTitle">Department Overview</h3>
+        <button class="modal-close" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="deptModalBody">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Emergency Call Modal -->
+  <div class="modal-backdrop" id="emergencyCallModal" role="dialog" aria-modal="true" aria-labelledby="emergencyModalTitle">
+    <div class="modal-dialog" style="max-width: 480px;">
+      <div class="modal-header" style="background: #fef2f2; border-bottom: 1px solid #fee2e2;">
+        <h3 id="emergencyModalTitle" style="color: var(--emergency);">Emergency Assistance</h3>
+        <button class="modal-close" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <div style="width: 60px; height: 60px; border-radius: 50%; background: #fee2e2; color: var(--emergency); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+        <h4 style="font-size: 1.2rem; font-weight: 800; color: var(--primary-deep); margin-bottom: 8px;">PR Healthcare Helpline</h4>
+        <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+          For immediate medical support and rapid triage, please contact our 24/7 dedicated line via WhatsApp or phone.
+        </p>
+
+        <div style="background: var(--bg-alt); padding: 16px; border-radius: var(--radius-md); margin-bottom: 24px;">
+          <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 4px;">Direct WhatsApp Helpline</div>
+          <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary-deep);">+91 83678398090</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <a href="https://wa.me/9183678398090" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+            <span>Open WhatsApp Chat Now</span>
+          </a>
+          <a href="tel:+9183678398090" class="btn btn-outline" style="width: 100%;">
+            <span>Dial +91 83678398090</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
