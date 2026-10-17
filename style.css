@@ -2212,5 +2212,16 @@ textarea.form-control {
 
   .emergency-actions .btn {
     width: 100%;
-  }
+  }/* Fix: Make hidden website content visible */
+.fade-in-up {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+.fade-in-up.appear {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
 }
